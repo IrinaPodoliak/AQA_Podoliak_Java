@@ -1,16 +1,19 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class IntegerArray {
     public static void main(String[] args) {
-        int[] integerArray = new int[]{3, 7, 8, 9, 12};
-        for (int a:integerArray) {
-            if (a % 3==0) {
-                System.out.println(a);
+        System.out.println("Введите 6 чисел через пробел, затем нажмите Enter:");
+        Scanner console = new Scanner(System.in);
+        int[] integerArray = new int[6];
+        for (int i=0;i<integerArray.length;i++){
+            integerArray[i] = console.nextInt();
+        }
+        System.out.println("Числа, кратные трём:");
+        for (int j : integerArray) {
+            if (j % 3 == 0) {
+                System.out.println(j);
             }
         }
     }

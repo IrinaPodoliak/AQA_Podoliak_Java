@@ -2,10 +2,6 @@ package org.example;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class GreaterNumber {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
